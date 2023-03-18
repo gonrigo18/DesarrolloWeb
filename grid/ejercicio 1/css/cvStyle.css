@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+    margin: 20px 20px;
+    padding: 10px;
+    line-height: 1.5;
+}
+.picture{
+    width: 25%;
+    height: 25%;
+    padding: 10px;
+}
+.profile{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    border: 1px solid blue;
+}
+.profile h1{
+    margin: 10px;
+    font-size: 70px;
+}
+.profile h2{
+    margin: 10px;
+    font-size: 40px;
+}
+
+.profile-description{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px auto;
+}
+
+.card{
+    display: block;
+    width: 45%;
+    border: 1px solid blue;
+    padding: 10px;
+    margin-top: 10px;
+}
+.card h1{
+    margin: 10px auto;
+}
+.card p{
+    margin: 10px auto;
+}
+section{
+    display: flex;
+}
+.profile-sections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+@media (max-width:968px){
+
+    .profile-description h1{
+        font-size: 50px;
+    }
+    .profile-description h2{
+        font-size:30px;
+    }
+}
+
+@media (max-width:768px){
+
+    .profile-description h1{
+        font-size: 40px;
+    }
+    .profile-description h2{
+        font-size:20px;
+    }
+}
+@media (max-width:600px){
+
+    .profile-description h1{
+        font-size: 30px;
+    }
+    .profile-description h2{
+        font-size:20px;
+    }
+    .picture{
+        width: 0;
+        height: 0;
+    }
+}
