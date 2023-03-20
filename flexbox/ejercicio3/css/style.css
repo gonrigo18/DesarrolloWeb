@@ -1,0 +1,64 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    --font1: 'Red Hat Display', sans-serif;
+    --padding-container: 60px 0;
+}
+
+*{
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero__img{
+    display: block;
+}
+
+.hero__texts{
+    background-color: var(--Very-pale-blue);
+    text-align: center;
+    padding: 2em;
+}
+.hero__plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.plan__texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__ctas{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
